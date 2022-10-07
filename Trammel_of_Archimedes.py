@@ -1,7 +1,6 @@
 import tkinter as tk
 import turtle as tat
-from PIL import Image
-from PIL import ImageTk
+from PIL import Image, ImageTk
 import tkinter.font as font
 
 web = tk.Tk()
