@@ -1,10 +1,8 @@
-
 import tkinter as tk
 import turtle as tat
 from PIL import Image
 from PIL import ImageTk
 import tkinter.font as font
-
 
 web = tk.Tk()
 
@@ -12,9 +10,9 @@ can1=tk.Canvas(web,bg="black",width = 720, height = 1500)
 
 can1.grid(ipadx=0, ipady=0, rowspan=1, columnspan=1)
 
-
 ecran=tat.TurtleScreen(can1)
 #ecran.screensize(2000,2000)
+#The line above is responsible for controlling screen size
 ecran.bgcolor("black")
 
 tat = tat.RawTurtle(can1)
@@ -52,7 +50,7 @@ for i in range(0,30000):
 		tat.goto(250,170)
 		tat.goto(-300,170)
 
-a =Image.open("DCIM/Screenshots/Screenshot_2020-01-06-00-14-46-39.png")
+a =Image.open("Path/to/image/to/use/as/watermark/though/not/necessary")
 mag1=a.resize((250,600),Image.ANTIALIAS)
 ppp1 = ImageTk.PhotoImage(mag1)
 can1.create_image(180,-50,anchor="n",image=ppp1)
