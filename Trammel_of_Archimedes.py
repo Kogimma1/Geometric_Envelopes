@@ -7,7 +7,6 @@ import tkinter.font as font
 web = tk.Tk()
 
 can1=tk.Canvas(web,bg="black",width = 720, height = 1500)
-
 can1.grid(ipadx=0, ipady=0, rowspan=1, columnspan=1)
 
 ecran=tat.TurtleScreen(can1)
@@ -16,7 +15,6 @@ ecran=tat.TurtleScreen(can1)
 ecran.bgcolor("black")
 
 tat = tat.RawTurtle(can1)
-ecran.bgcolor("black")
 tat.color("white")
 tat.speed(0)
 tat.pensize(1.5)
